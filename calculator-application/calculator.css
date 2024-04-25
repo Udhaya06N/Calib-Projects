@@ -41,12 +41,29 @@
   gap: 10px;
 }
 
+.calculator .buttons :hover {
+  cursor: pointer;
+}
+
 .calculator button {
   width: 40px;
   margin: 10px;
   border-radius: 5px;
   padding: 5px 8px;
   font-size: 16px;
+}
+
+.calculator .btn-enter {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.calculator .btn-enter:hover {
+  background: transparent;
+  color: white;
+  box-shadow: 1.8px 1.6px 1.8px black;
 }
 
 @media screen and (max-width: 300px) {
@@ -58,5 +75,4 @@
   .calc-input {
     width: auto;
   }
-}
-/*# sourceMappingURL=calculator.css.map */
+}/*# sourceMappingURL=calculator.css.map */

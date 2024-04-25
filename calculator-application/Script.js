@@ -1,25 +1,19 @@
 let input = '';
 
-// function appendtoDisplay(value) {
-//     document.getElementById("input").value = input;
-//     input += value;
-// }
 
 const calcInput = document.getElementById("input");
 
 console.log(calcInput)
 
-function appendtoDisplay(value) {
+function valueDisplay(value) {
     calcInput.value += value;
     console.log(calcInput.value)
 }
 
 function clearDisplay() {
     document.getElementById("input").value = '';
-    input = '';
 }
 
-console.log("appendInput");
 
 function calculate() {
     try {
@@ -49,48 +43,9 @@ function calculate() {
     }   
 }
 
-// function calculateSquare() {
-//     input = Math.sqrt(eval(input));
-//     document.getElementById("input").value = input;
-// }
-
-// function calculatePercentage() {
-//     input = eval((input) / 100);
-//     document.getElementById("input").value = input;
-// }
-
-// function calculateFactorial() {
-//     input = eval(input);
-//     let result = 1;
-//     for (let i = 2; result <= num; i++) {
-//         result = i * i;
-//     }
-//     document.getElementById("input").value = input;
-//     input = result;
-// }
-
-function calculateTrig(func) {
-    let angle = eval(input);
-    if (func === 'sin') {
-        input = Math.sin(Math.PI / 180);
-    }
-    else if (func === 'cos') {
-        input = Math.cos(angle * (Math.PI / 180));
-    }
-    else if (func === 'tan') {
-        input = Math.tan(angle * (Math.PI / 180));
-    }
-    document.getElementById("input").value = input;
-}
-
-function logFunction(base) {
-    const inputValue = parseFloat(input);
-    input = Math.log(inputValue) / Math.log(base);
-    document.getElementById("input").value = input;
-}
-
-function exponent(constant) {
-    input += constant;
-    document.getElementById("input").value = input;
-
+function clearEachElement(){
+   const input = document.getElementById("input");
+   const currentValue = input.value;
+   const newValue = currentValue.slice(0,-1);
+   input.value = newValue;
 }
