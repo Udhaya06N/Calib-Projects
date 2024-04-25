@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.calc-text{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.calculator {
+  margin: auto;
+  margin-top: 13vh;
+  display: block;
+  border: 2px solid black;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: rgb(53, 50, 50);
+}
+
+.calculator .calc-input {
+  width: 90%;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: rgb(238, 234, 234);
+}
+
+.calculator .buttons {
+  width: auto;  
+  gap: 10px;
+}
+
+.calculator .buttons :hover{
+  cursor: pointer;
+}
+
+.calculator button {
+  width: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 16px;
+}
+
+.calculator .btn-enter{
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.calculator .btn-enter:hover{  
+  background: transparent;
+  color: white; 
+ box-shadow: 1.8px 1.6px 1.8px black ;
+}
+
+@media screen and (max-width: 300px) {
+  .calculator {
+    display: block;
+    position: relative;
+    width: 90%;
+  }
+
+  .calc-input {
+    width: auto;
+  }
+}
+
+
+

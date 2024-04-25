@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="input" class="calc-input" readonly>
+        <div class="buttons">
+            <button type="button" onclick="clearDisplay()">C</button>
+            <button type="button" onclick="valueDisplay('1')">1</button>
+            <button type="button" onclick="valueDisplay('2')">2</button>
+            <button type="button" onclick="clearEachElement()">X</button>
+            <button type="button" onclick="valueDisplay('3')">3</button>
+            <button type="button" onclick="valueDisplay('+')">+</button>
+            <button type="button" onclick="valueDisplay('4')">4</button>
+            <button type="button" onclick="valueDisplay('5')">5</button>
+            <button type="button" onclick="valueDisplay('6')">6</button>
+            <button type="button" onclick="valueDisplay('-')">-</button>
+            <button type="button" onclick="valueDisplay('7')">7</button>
+            <button type="button" onclick="valueDisplay('8')">8</button>
+            <button type="button" onclick="valueDisplay('9')">9</button>
+            <button type="button" onclick="valueDisplay('*')">*</button>
+            <button type="button" onclick="valueDisplay('.')">.</button>
+            <button type="button" onclick="valueDisplay('0')">0</button>
+            <button type="button" onclick="valueDisplay('(')">(</button>
+            <button type="button" onclick="valueDisplay(')')">)</button>
+            <button type="button" onclick="valueDisplay('/')">/</button>
+            <button type="button" onclick="valueDisplay('%')">%</button>
+            <button type="button" onclick="valueDisplay('sin')">sin</button>
+            <button type="button" onclick="valueDisplay('cos')">cos</button>
+            <button type="button" onclick="valueDisplay('tan')">tan</button>
+            <button type="button" onclick="valueDisplay('log')">log</button>   
+            <button type="button" class="btn-enter" onclick="calculate()">Enter</button>  
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+
+ -->
