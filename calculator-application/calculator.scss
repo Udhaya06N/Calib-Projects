@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// div .calculator {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.calc-text{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.calculator {
+  margin: auto;
+  margin-top: 13vh;
+  display: block;
+  border: 2px solid black;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: rgb(53, 50, 50);
+}
+
+.calculator .calc-input {
+  width: 90%;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: rgb(238, 234, 234);
+}
+
+.calculator .buttons {
+  width: auto;  
+  gap: 10px;
+}
+
+.calculator button {
+  // gap: 10px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  .calculator {
+    display: block;
+    position: relative;
+    width: 90%;
+    // width: 90%;
+    // max-width: none;
+  }
+
+  .calc-input {
+    width: auto;
+  }
+}
+
+//  @media screen and (max-width: 980px){
+//   .calculator{
+//     display: flex;
+//     position: fixed;
+//     width: 100%;
+//   }
+//  }
+
+/*# sourceMappingURL=calculator.css.map */
